@@ -1,0 +1,426 @@
+ul{
+    list-style-type: none;
+}
+
+ul li i{
+    padding-left: 32px;
+}
+
+h2{
+    color: #4e3821;
+    border-bottom: 2px dashed #068a62;
+    display: table;
+    margin: 0 auto;
+    padding: 16px 0 0 0;
+}
+
+.back-img .d-flex{
+    margin-left: 64px;
+    margin-right: 64px;
+    border-bottom: #4e3821 solid 1px;
+    padding-top: 16px;
+}
+
+.back-img .navbar{ 
+    padding: 0%;
+    margin: 8px 64px 0 64px;
+}
+
+.back-img{
+    font-family: sans-serif;
+    background-image: linear-gradient(rgba(250, 250, 250, 0.952), rgba(0, 0, 0, 0)), url("images/hero-image.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    margin-bottom: 0%;
+    height: 800px;
+}
+
+.hero-area{
+    transform: translate(-50%, -50%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    
+}
+
+.wave{
+    position: absolute;
+    bottom: 0;
+}
+
+.hero-area .input-group{
+    border-radius: 30%;
+    width: 500px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.hero-area .input-group button {
+    padding: 0px;
+    border: 0px;
+}
+
+
+/* ----------------CARDS----------------- */
+.cards{
+    color: #4e3821;
+    text-align: center;
+    border-style: none;
+}
+.cards .d-flex .card{
+    border-style: none;
+    padding-right: 32px;
+    padding-left: 32px;
+}
+
+
+
+
+
+/* ----------------------------------MICE TOURISM-------------------------- */
+.mice-tourism{
+    background-color: rgb(217, 236, 219);
+    padding-top: 64px;
+    padding-bottom: 64px;
+}
+
+.mice-tourism img{
+    width: 700px;
+    padding-right: 80px;
+    padding-left: 80px;
+}
+
+
+
+
+/* --------------------------OUR TEAMS------------------------------- */
+.our-teams .owl-carousel .item{
+    background-image: linear-gradient(rgb(255, 255, 255),#fff);
+    text-align: center;
+    color:  #4e3821;
+    padding: 40px 0 0 0;
+    opacity: 0.4;
+    transform: scale3d(0.6, 0.6, 0.8);
+    transition: all 0.8s ease-in-out;
+}
+
+.our-teams .owl-carousel .owl-item.active.center .item{
+    background-image: linear-gradient(rgb(255, 255, 255),#068a62);
+    opacity: 1;
+    transform: scale3d(0.8,0.8,0.8);
+    color: #fff;
+}
+
+.our-teams .owl-carousel .item img{
+    width: 300px;
+    height: auto;
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+    border-radius: 8%;
+}
+
+.our-teams .owl-carousel .owl-nav{
+    font-size: 100px;
+}
+
+.our-teams .owl-carousel .owl-prev{
+    position: absolute;
+    top: 50%;
+    left: 3%;
+    transform: translateY(-50%);
+}
+
+.our-teams .owl-carousel .owl-next{
+    position: absolute;
+    top: 50%;
+    right: 3%;
+    transform: translateY(-50%);
+}
+
+
+
+
+
+
+/* ------------------------------WHY CHOOSE US--------------------------------------------------------- */
+.why-choose-us{
+    background-image: linear-gradient(rgb(250, 250, 250), rgba(0, 0, 0, 0)), url(images/bouddha.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    margin-bottom: 0%;
+    height: 800px;
+}
+
+.why-choose-us .iata-logo{
+    text-align: center;
+    padding: 180px 40px 0 40px;
+    color: #4e3821;
+}
+
+.why-choose-us .iata-logo img{
+    width: 200px;
+    height: auto;
+    padding-top: 64px;
+}
+
+.why-choose-us .three-reasons{
+    color: #4e3821;
+    padding-top: 64px;
+    background-image: linear-gradient(hsla(0, 0%, 98%, 0.500),rgba(250, 250, 250, 0.500));
+}
+
+.why-choose-us .three-reasons .reason{
+    padding-top: 32px;
+    padding-left: 64px;
+    padding-right: 64px;
+}
+
+.why-choose-us .three-reasons .reason h3 img{
+    width: 80px;
+    height: auto;
+}
+
+
+
+
+
+/* ----------------------BEST PACKAGES------------------- */
+.best-packages{
+    padding-top: 64px;
+    padding-bottom: 32px;
+}
+
+.best-packages .card{
+    background: radial-gradient(#111 50%, #000 100%);
+    position: relative;
+}
+
+.best-packages .card img{
+    transition: all 0.3s ease-out;
+}
+
+.best-packages .card:hover img{
+    opacity: 0.3;
+}
+
+.best-packages .card .btn{
+    position: absolute;
+    top: 30%;
+    transform: translateX(170%);
+    border-color: #fff;
+    background-color: #000;
+    opacity: 0;
+    transition: all 0.3s ease-in;
+}
+
+.best-packages .card:hover .btn{
+    background-color: #fff;
+    border: none;
+    color: #000;
+    opacity: 0.6;
+}
+
+.best-packages .card .card-body{
+    padding: 0%;
+}
+
+.best-packages .card .card-body .title{
+    background-color: #fff;
+}
+
+.best-packages .card .card-body .details .time{
+    background-color: #4e3821;
+    text-align: center;
+    padding: 8px;
+}
+
+.best-packages .card .card-body .details .rate{
+    background-color: #068a62;
+    text-align: center;
+    padding: 8px;
+}
+
+
+
+
+
+
+
+
+/* -------------------------------------------RECOGNITION-------------------------------------------------- */
+.recognition{
+    background: linear-gradient(rgb(224, 224, 224), rgba(238, 238, 238, 0.445)), url(images/mountains.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 32px 64px 32px 64px;
+}
+
+.recognition h2{
+    margin: 0%;
+
+}
+
+.recognition h6{
+    padding-top: 16px;
+}
+
+
+
+
+
+/* --------------------------ISO---------------------------------- */
+.isogrp{
+    background: url(images/isocover.png);
+    padding: 32px 64px 72px 64px;
+    color: #4e3821;
+}
+
+
+.isogrp .iso{
+    border-bottom: 2px solid #4e3821;
+    cursor: pointer;
+    padding: 16px;
+}
+
+.isogrp .iso .question{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.isogrp .iso .question .h3{
+    font-size: 1.8rem;
+}
+
+.isogrp .iso .answer{
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 1.4s ease;
+}
+
+.isogrp .iso .answer p{
+    padding-top: 1rem;
+    line-height: 1.6;
+    font-size: 1.4rem;
+}
+
+.isogrp .iso.active .answer{
+    max-height: 300px;
+    animation: fade 1s ease-in-out;
+}
+
+.iso.active .question i{
+    transform: rotate(180deg);
+}
+
+.isogrp .iso .question i{
+    transition: transform .5s ease-in;
+    color: #4e3821;
+}
+
+@keyframes fade {
+    from{
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+
+
+
+
+/* ---------------------FOOTER----------------------- */  
+footer {  
+    background: url(images/sagarmatha.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    color: #fff;
+    padding-top: 64px;
+} 
+
+footer::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
+}
+
+footer .row{
+    margin: 0%;
+    padding: 16px 0px;
+}
+
+footer .container{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+footer .row .col-md-4 h4{
+    border-bottom: 2px dashed #068a62;
+    display: table;
+    padding: 16px 0 0 0;
+}
+
+footer .row .col-md-4 .button{
+    position: relative;
+}
+
+footer .row .col-md-4 .button button{
+    background-color: #068a62;
+    padding: 8px 16px;
+    border-radius: 8px;
+    color: #fff;
+    border: none;
+}
+
+footer .row .col-md-4 ul{
+    padding-left: 0%;
+}
+
+footer .row .col-md-4 ul li{
+    list-style: none;
+    color: #fff ;
+    padding: 8px 0;
+}
+
+footer .row .col-md-4 ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+
+footer .row .col-md-4 ul li a i{
+    color: #068a62;
+    padding-left: 0%;
+}
+
+footer .row .contact ul li a i{
+    background: #068a62;
+    color: #fff;
+    border-radius: 50%;
+    text-align: center;
+    padding: 8px;
+}
+
+footer .row .col-md-6 .socials{
+    justify-content: space-around;
+}
+
+footer .row .col-md-6 .socials i{
+    background-color: #068a62;
+    border-radius: 50%;
+    padding: 16px;
+}
