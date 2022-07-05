@@ -157,10 +157,16 @@ h2{
     height: 800px;
 }
 
+.why-choose-us .circle img{
+    padding-top: 64px;
+}
+
 .why-choose-us .iata-logo{
     text-align: center;
-    padding: 180px 40px 0 40px;
-    color: #4e3821;
+    color: #fff;
+    position: absolute;
+    top: 154px;
+    left: 80px;
 }
 
 .why-choose-us .iata-logo img{
