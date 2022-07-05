@@ -25,3 +25,4 @@ isogrps.forEach(iso => {
         iso.classList.toggle("active");
     })
 })
+
