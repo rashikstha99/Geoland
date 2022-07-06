@@ -149,11 +149,7 @@ h2{
     top: 50%;
     left: 3%;
     transform: translateY(-50%);
-}
-
-.our-teams .owl-carousel .owl-prev:hover{
     color: #4e3821;
-    background-color: #fff;
 }
 
 .our-teams .owl-carousel .owl-next{
@@ -161,6 +157,20 @@ h2{
     top: 50%;
     right: 3%;
     transform: translateY(-50%);
+    color: #4e3821;
+}
+
+.our-teams .owl-carousel .owl-nav .owl-prev:hover{
+    background: #fff;
+}
+
+.our-teams .owl-carousel .owl-nav .owl-next:hover{
+    background: #fff;
+}
+
+.our-teams .owl-carousel .owl-nav button span{
+    color: #4e3821;
+    background: #fff;
 }
 
 
@@ -229,6 +239,7 @@ h2{
 .best-packages .card{
     background: radial-gradient(#111 50%, #000 100%);
     position: relative;
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
 }
 
 .best-packages .card img{

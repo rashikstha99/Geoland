@@ -17,15 +17,6 @@ $('.owl-carousel').owlCarousel({
     }
 })
 
-
-// const isogrps = document.querySelectorAll(".iso");
-
-// isogrps.forEach(iso => {
-//     iso.addEventListener("click", () => {
-//         iso.classList.toggle("active");
-//     })
-// })
-
 var acc = document.getElementsByClassName("accordion");
 var panel = document.getElementsByClassName('panel');
 
