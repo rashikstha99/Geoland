@@ -311,6 +311,13 @@ h2{
     color: #4e3821;
 }
 
+div.panel {
+    display: none;
+}
+
+div.panel.show {
+    display: block !important;
+}
 
 .isogrp .iso{
     border-bottom: 2px solid #4e3821;
@@ -318,51 +325,20 @@ h2{
     padding: 16px;
 }
 
-.isogrp .iso .question{
+.isogrp .iso .accordion{
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.isogrp .iso .question .h3{
+.isogrp .iso .accordion b{
     font-size: 1.8rem;
 }
 
-.isogrp .iso .answer{
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 1.4s ease;
-}
-
-.isogrp .iso .answer p{
+.isogrp .iso .panel p{
     padding-top: 1rem;
     line-height: 1.6;
     font-size: 1.4rem;
-}
-
-.isogrp .iso.active .answer{
-    max-height: 300px;
-    animation: fade 1s ease-in-out;
-}
-
-.iso.active .question i{
-    transform: rotate(180deg);
-}
-
-.isogrp .iso .question i{
-    transition: transform .5s ease-in;
-    color: #4e3821;
-}
-
-@keyframes fade {
-    from{
-        opacity: 0;
-        transform: translateY(-10px);
-    }
-    to{
-        opacity: 1;
-        transform: translateY(0px);
-    }
 }
 
 
