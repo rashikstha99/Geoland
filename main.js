@@ -17,6 +17,8 @@ $('.owl-carousel').owlCarousel({
     }
 })
 
+
+
 var acc = document.getElementsByClassName("accordion");
 var panel = document.getElementsByClassName('panel');
 
