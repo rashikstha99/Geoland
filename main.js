@@ -1,3 +1,22 @@
+// Sticky nav change color 
+  $(window).scroll(function () {
+    var dh = $(document).scrollTop();
+    var navHeight = $("header").height();
+  
+    if (dh > navHeight / 2) {
+      $(".navbar")
+        .addClass("fixed-top")
+        .css({"background":"#fbfffef3", "width":"90%"});
+    } else {
+      $(".navbar")
+        .removeClass("fixed-top")
+        .css({"background":"transparent", "width":"80%"});
+    }
+  });
+
+
+
+//Owl caraousel function 
 $('.owl-carousel').owlCarousel({
     loop:true,
     margin:10,
@@ -9,7 +28,7 @@ $('.owl-carousel').owlCarousel({
             items:1
         },
         600:{
-            items:2
+            items:1
         },
         1000:{
             items:3
@@ -18,10 +37,9 @@ $('.owl-carousel').owlCarousel({
 })
 
 
-
+//Open only one accordion at a time
 var acc = document.getElementsByClassName("accordion");
 var panel = document.getElementsByClassName('panel');
-
 for (var i = 0; i < acc.length; i++) {
     acc[i].onclick = function() {
         var setClasses = !this.classList.contains('active');

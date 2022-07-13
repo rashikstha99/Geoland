@@ -1,5 +1,10 @@
 body{
     width: 100%;
+    /* font-size: 1rem !important; */
+}
+
+p{
+    font-size: 1.25rem; 
 }
 
 ul{
@@ -11,6 +16,7 @@ ul li i{
 }
 
 h2{
+    font-size: 2.25rem;
     color: #4e3821;
     border-bottom: 2px dashed #068a62;
     display: table;
@@ -34,15 +40,28 @@ h2{
     background-size: cover;
     position: relative;
     margin-bottom: 0%;
-    height: 720px;
+    height: 60rem;
     width: 100%;
 }
 
-.back-img .d-flex{
+.back-img .row{
     width: 80%;
     margin: 0 auto;
     border-bottom: #4e3821 solid 1px;
     padding-top: 1%;
+}
+
+.back-img .row .col-md-3{
+    text-align: center;
+}
+
+.back-img .row .col-md-3 p{
+    font-size: 1rem;
+}
+
+.back-img .row .d-inline-flex{
+    padding: 0;
+    font-size: 1rem;
 }
 
 .back-img .navbar{ 
@@ -51,39 +70,84 @@ h2{
 }
 
 .back-img .navbar img{
-    width: 25%;
+    width: 20%;
     height: auto;
 }
+
+.back-img .navbar .navbar-toggler .navbar-toggler-icon{
+    color: #4e3821;
+}
+
+.back-img .navbar .ml-auto .navbar-nav{
+    font-size: 1.25rem;
+}
+
+.back-img .navbar .ml-auto .navbar-nav .nav-item.search{
+    line-height: 2.5em;
+}
+
+.back-img .navbar .ml-auto .navbar-nav .nav-item.search i{
+    padding: 0;
+}
+
+.back-img .navbar .ml-auto .navbar-nav .nav-item .nav-link{
+    color: #4e3821;
+}
+
+.back-img .navbar .ml-auto .navbar-nav .nav-item:hover .nav-link{
+    background-color: #068a6283;
+    color: #fff;
+    border-radius: 20px;
+    padding: 8px 16px;
+    transition: 0.2s all ease-in-out;
+}
+
+
 
 .back-img .navbar .ml-auto .navbar-nav .dropdown:hover .dropdown-menu{
     display: block;
 }
 
 .hero-area{
-    transform: translate(-50%, -50%);
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    
+    width: 40%;
+    margin: 10em auto;
 }
+
+.hero-area .lead{
+    font-size: 1.75rem;
+}
+
+.hero-area form .form-row .form-group{
+    display: flex;
+    width: 100%;
+}
+
+.hero-area form .form-row .form-group .form-control{
+    border-radius: 0;
+    border: none;
+    height: 3.5rem;
+}
+
+#inputCategories{
+    border-top-left-radius: 10px;
+    border-bottom-left-radius:10px ;
+    border-right: 2px solid rgba(192, 192, 192, 0.959) ;
+}
+
+#inputDestination{
+    border-right: 2px solid rgba(192, 192, 192, 0.959) ;
+}
+
+#searchBtn{
+    border-top-right-radius:10px ;
+    border-bottom-right-radius:10px ;
+}
+
 
 .wave{
     width: 100%;
     position: absolute;
     bottom: 0;
-}
-
-.hero-area .input-group{
-    border-radius: 30%;
-    width: 500px;
-    display: flex;
-    justify-content: center;
-    align-content: center;
-}
-
-.hero-area .input-group button {
-    padding: 0px;
-    border: 0px;
 }
 
 
@@ -93,30 +157,38 @@ h2{
     color: #4e3821;
     text-align: center;
     border-style: none;
-    margin: 0 auto;
+    margin: 2rem auto;
+    padding: 32px 0px;
+
 }
 
-.cards .d-flex{
+.cards{
     justify-content: space-around;
 }
 
-.cards .d-flex .card{
-    width: 30%;
-    border-style: none;
-    /* padding-right: 32px;
-    padding-left: 32px; */
+.cards .card{
+    padding: 0 54px;
+    border: none;
 }
 
-.cards .d-flex .card img{
-    height: auto;
-    width: 30%;
+.cards .card .card-title{
+    padding-top: 32px;
+}
+
+.cards .card img{
+    width: 40%;
     display: block;
     margin-left: auto;
     margin-right: auto;
 }
 
-.cards .d-flex .card .card-body{
+.cards .card .card-body{
     padding: 8px 0 ;
+}
+
+.cards .card .card-body .card-text{
+    margin: 1em;
+    font-size: 1.25rem;
 }
 
 
@@ -126,21 +198,29 @@ h2{
 /* ----------------------------------MICE TOURISM-------------------------- */
 .mice-tourism{
     background-color: rgb(217, 236, 219);
-    padding-top: 64px;
-    padding-bottom: 64px;
+    padding-top: 32px;
+    padding-bottom: 32px;
     width: 100%;
 }
 
+.mice-tourism.row{
+    margin: 0;
+}
+
+.mice-tourism .details a{
+    font-size: 1.25rem;
+}
+
 .mice-tourism img{
-    width: 45%;
-    height: auto;
+    width: 100%;
     margin: 0 auto;
 }
 
 .mice-tourism .details{
-    width: 45%;
+    padding: 48px 32px;
+    /* width: 45%;
     height: auto;
-    margin: 0 auto;
+    margin: 0 auto; */
 }
 
 
@@ -231,31 +311,36 @@ h2{
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
-    margin-bottom: 0%;
 }
+
+.why-choose-us.row{
+    margin: 0px;
+}
+
+
 
 .why-choose-us .circle{
     width: 45%;
     margin: 0 auto;
+    background: url(images/Mask\ group.png) center;
+    background-size: 80%; 
+    background-repeat: no-repeat;
 }
 
-.why-choose-us .circle img{
-    padding-top: 64px;
-    width: 100%;
-}
 
 .why-choose-us .iata-logo{
     text-align: center;
     color: #fff;
-    position: absolute;
-    top: 30%;
-    left: 13%;
+}
+
+.why-choose-us .iata-logo .group{
+    padding-top: 190px;
+    padding-left: 24px;
 }
 
 .why-choose-us .iata-logo img{
-    width: 200px;
+    width: 40%;
     height: auto;
-    padding-top: 64px;
 }
 
 .why-choose-us .three-reasons{
@@ -292,9 +377,11 @@ h2{
     background: radial-gradient(#111 50%, #000 100%);
     position: relative;
     box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+    padding: 0;
 }
 
 .best-packages .card img{
+    border-radius: 16px;
     transition: all 0.3s ease-out;
 }
 
@@ -326,6 +413,7 @@ h2{
 
 .best-packages .card .card-body .title{
     background-color: #fff;
+    padding: 8px;
 }
 
 .best-packages .card .card-body .details{
@@ -483,6 +571,7 @@ footer .row .col-md-4 ul li{
     list-style: none;
     color: #fff ;
     padding: 8px 0;
+    font-size: 1.25rem;
 }
 
 footer .row .col-md-4 ul li a{
@@ -507,9 +596,292 @@ footer .row .col-md-6 .socials{
     padding-left: 148px;
 }
 
-footer .row .col-md-6 .socials i{
+footer .row .col-md-6 .socials .btn{
     background-color: #068a62;
-    color: #fff;
+    width: 70px;
+    height: 70px;
     border-radius: 50%;
-    padding: 16px;
+    line-height: 70px;
+    margin-right: 1rem;
 }
+
+footer .row .col-md-6 .socials .btn i{
+    color: #fff;
+}
+
+
+
+
+
+/* ________________________________________RESPONSIVE_____________________________________________ */
+
+@media (max-width:1200px){
+    p{
+        font-size: 1rem;
+    }
+
+
+    .back-img{
+        height: 50rem;
+    }
+
+    .back-img .row .col-md-3 p {
+        font-size: 0.7rem;
+    }
+
+    .back-img .row .d-inline-flex {
+        padding: 0;
+        font-size: 0.7rem;
+    }
+
+    .hero-area {
+        width: 50%;
+        margin: 10em auto;
+    }
+
+    .mice-tourism img{
+        padding: 88px 32px;
+    }
+
+    .owl-carousel .owl-item .item{
+        margin-left: -80px;
+        margin-right: -80px;
+        padding: 0px;
+    }
+
+    .why-choose-us{
+        flex-direction: column;
+    }
+
+    .why-choose-us .circle{
+        width: 40%;
+    }
+
+    .why-choose-us .iata-logo .group {
+        padding: 115px 80px;
+    }
+
+    .why-choose-us .three-reasons{
+        max-width: 100%;
+        width: 100%;
+        margin-top: 16px;
+    }
+
+    .best-packages .card .card-body .details .time {
+        padding: 12px;
+    }
+
+    footer{
+        padding-top: 0%;
+    }
+
+    footer .row .col-md-4 ul li{
+        font-size: 1rem;
+    }
+}
+
+@media (max-width:992px){
+    p{
+        font-size: 1rem !important;
+    }
+
+    h1{
+        font-size: 2rem !important;
+    }
+
+    h2{
+        font-size: 1.75rem !important;
+    }
+
+    h3{
+        font-size: 1.5rem !important;
+    }
+
+    h4{
+        font-size: 1.25rem !important;
+    }
+
+    h5{
+        font-size: 1rem !important;
+    }
+
+    .back-img{
+        height: 40rem;
+    }
+
+    .back-img .row .col-md-3 p {
+        font-size: 0.55rem !important;
+    }
+
+    .back-img .row .d-inline-flex {
+        padding: 0;
+        font-size: 0.65rem;
+    }
+
+    .back-img .navbar .ml-auto .navbar-nav {
+        font-size: 0.9rem;
+    }
+
+    .our-teams .owl-carousel .item{
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .our-teams .owl-carousel .item img {
+        width: 56%;
+    }
+
+    .why-choose-us .circle {
+        width: 44%;
+    }
+
+    .why-choose-us .iata-logo{
+        width: 94%;
+        margin: 0 auto;
+    }
+
+    .why-choose-us .iata-logo .group {
+        padding: 65px 50px;
+    }
+
+    .why-choose-us .three-reasons .reason h3 img {
+        width: 4rem;
+        height: auto;
+    }
+
+    .isogrp .iso .accordion b {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width:768px){
+    h1{
+        font-size: 1.75rem !important;
+    }
+
+    h2{
+        font-size: 1.5rem !important;
+    }
+
+    h3{
+        font-size: 1.25rem !important;
+    }
+
+    h4{
+        font-size: 1rem !important;
+    }
+
+    h5{
+        font-size: 0.75rem !important;
+    }
+
+    p{
+        font-size: 0.75rem !important;
+    }
+
+    .back-img{
+        height: 32rem;
+    }
+
+    .hero-area {
+        width: 50%;
+        margin: 5em auto;
+    }
+
+    .hero-area form .form-row .form-group .form-control {
+        border-radius: 0;
+        border: none;
+        height: 2.5rem;
+        font-size: 0.64rem;
+    }
+
+    .hero-area form .btn{
+        padding: 0.3rem 0.5rem;
+    }
+
+    .cards{
+        padding: 0%;
+    }
+
+    .cards .row{
+        flex-direction: column;
+    }
+
+    .cards .row .card{
+        width: 100%;
+        margin: 0 auto;
+        padding: 0%;
+    }
+
+    .cards .row .card h3{
+        padding-top: 0px;
+    }
+
+    .mice-tourism{
+        flex-direction: column;
+    }
+
+    .mice-tourism .col-md-6 {
+        max-width: 100%;
+        padding: 0;
+    }
+
+    .mice-tourism .col-md-6 img{
+        padding: 32px;
+    }
+
+    .mice-tourism .details{
+        padding: 32px;
+    }
+
+    .best-packages .row{
+        flex-direction: column;
+    }
+
+    .best-packages .row .card{
+        width: 100%;
+        margin: 16px auto;
+        border-radius: 16px;
+    }
+
+    .best-packages .row .card .card-body .details .time i{
+        font-size: 0.75rem;
+    }
+
+    .best-packages .title{
+        flex-grow: 1;
+    }
+
+    .recognition .logo {
+        width: 100%;
+    }
+
+    footer .row .col-md-4 ul li{
+        font-size: 0.75rem;
+    }
+
+    footer .row .col-md-6 .socials{
+        width: 80%;
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    footer .row .col-md-6 .socials .btn {
+        width: 50px;
+        height: 50px;
+        line-height: 48px;
+        margin-right: 1rem;
+        margin-left: 1rem;
+    }
+
+    footer .row .col-md-6 .socials .btn i{
+        font-size: 1.75rem;
+    }
+}
+
+@media (max-width:576px){
+    .hero-area{
+        width: 100% !important;
+    }
+}
+
