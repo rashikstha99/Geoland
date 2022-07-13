@@ -338,6 +338,11 @@ h2{
     padding-left: 24px;
 }
 
+.why-choose-us .iata-logo .group p{
+    width: 60%; 
+    margin: 0 auto;
+}
+
 .why-choose-us .iata-logo img{
     width: 40%;
     height: auto;
@@ -563,6 +568,11 @@ footer .row .col-md-4 .button button{
     border: none;
 }
 
+footer .row .col-md-4 .button .btn2{
+    position: absolute; 
+    right: 48px;
+}
+
 footer .row .col-md-4 ul{
     padding-left: 0%;
 }
@@ -741,7 +751,7 @@ footer .row .col-md-6 .socials .btn i{
     }
 
     .why-choose-us .iata-logo .group {
-        padding: 65px 50px;
+        padding: 60px 45px;
     }
 
     .why-choose-us .three-reasons .reason h3 img {
@@ -852,6 +862,10 @@ footer .row .col-md-6 .socials .btn i{
         flex-grow: 1;
     }
 
+    .why-choose-us .iata-logo .group {
+        padding: 75px 8px;
+    }
+
     .recognition .logo {
         width: 100%;
     }
@@ -880,8 +894,94 @@ footer .row .col-md-6 .socials .btn i{
 }
 
 @media (max-width:576px){
+
+    h1{
+        font-size: 1.5rem !important;
+    }
+
+    h2{
+        font-size: 1.25rem !important;
+    }
+
+    h3{
+        font-size: 1rem !important;
+    }
+
+    h4{
+        font-size: 0.75rem !important;
+    }
+
+    h5{
+        font-size: 0.75rem !important;
+    }
+
+    p{
+        font-size: 0.75rem !important;
+    }
+
+    .back-img .row{
+        flex-wrap: nowrap;
+    }
+
+    .hero-area form .form-row .form-group {
+        width: 70%;
+        margin: 0 auto;
+    }
+
     .hero-area{
         width: 100% !important;
     }
-}
 
+    .cards .row{
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    .mice-tourism .details a {
+        font-size: 1rem;
+    }
+
+    .why-choose-us .circle{
+        width: 52%;
+    }
+
+    .why-choose-us .iata-logo .group {
+        padding: 40px 0px;
+    }
+    
+    .best-packages.container {
+        width: 50%;
+    }
+
+    .best-packages .card .btn {
+        transform: translateX(80%);
+        font-size: 0.75rem;
+    }
+
+    .recognition .logo{
+        width: 50%;
+    }
+
+    footer .row .col-md-4 .button button {
+        padding: 4px 8px;
+        font-size: 0.75rem;
+    }
+
+    footer .row .col-md-4 .button .btn2{
+        position: absolute; 
+        right: 250px;
+    }
+
+    footer .row .col-md-4 {
+        margin-bottom: 16px;
+    }
+
+    footer .row .col-md-4 ul{
+        margin: 0;
+    }
+
+    footer .row .col-md-6 .socials {
+        width: 50%;
+    }
+
+}
