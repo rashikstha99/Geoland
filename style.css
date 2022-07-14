@@ -1,10 +1,20 @@
-body{
-    width: 100%;
-    /* font-size: 1rem !important; */
+@font-face {
+    font-family: proxima-nova;
+    src: url(font/Proxima\ Nova\ Font.otf);
 }
 
+body{
+    width: 100%;
+    font-size: 1rem !important;
+    font-family: proxima-nova;
+}
+
+h1, h2, h3, h4, h5{
+    font-family: 'Montserrat', sans-serif;
+}
 p{
-    font-size: 1.25rem; 
+    font-size: 1rem; 
+    font-family: proxima-nova;
 }
 
 ul{
@@ -423,10 +433,13 @@ h2{
 
 .best-packages .card .card-body .details{
     color: #fff;
+    display: flex;
+    flex-direction: column;
 }
 
 .best-packages .card .card-body .details .time{
     background-color: #4e3821;
+    flex-grow: 1;
     text-align: center;
     padding: 8px;
 }

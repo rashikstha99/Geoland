@@ -1,12 +1,12 @@
 // Sticky nav change color 
   $(window).scroll(function () {
     var dh = $(document).scrollTop();
-    var navHeight = $("header").height();
+    var navHeight = $(".hero-area").height();
   
     if (dh > navHeight / 2) {
       $(".navbar")
         .addClass("fixed-top")
-        .css({"background":"#fbfffef3", "width":"90%"});
+        .css({"background":"#fff", "width":"100%"});
     } else {
       $(".navbar")
         .removeClass("fixed-top")
