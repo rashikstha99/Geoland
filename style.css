@@ -362,6 +362,7 @@ h2{
     width: 50%;
     color: #4e3821;
     background-image: linear-gradient(hsla(0, 0%, 98%, 0.500),rgba(250, 250, 250, 0.500));
+    padding-bottom: 32px; ;
 }
 
 .why-choose-us .three-reasons .reason{
@@ -381,7 +382,7 @@ h2{
 
 /* ----------------------BEST PACKAGES------------------- */
 .best-packages{
-    padding-bottom: 32px;
+    padding-bottom: 4rem;
 }
 
 .best-packages .card-deck .card{
@@ -575,7 +576,7 @@ footer .row .col-md-4 .button{
 
 footer .row .col-md-4 .button button{
     background-color: #068a62;
-    padding: 8px 16px;
+    padding: 0.8rem 1.6rem;
     border-radius: 8px;
     color: #fff;
     border: none;
@@ -630,6 +631,10 @@ footer .row .col-md-6 .socials .btn{
 
 footer .row .col-md-6 .socials .btn i{
     color: #fff;
+}
+
+footer .form-control{
+    padding: 1.4rem;
 }
 
 
